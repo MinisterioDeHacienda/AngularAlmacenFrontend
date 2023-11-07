@@ -28,7 +28,10 @@ import { DeleteVentaComponent } from './components/venta/delete-venta/delete-ven
 import { UpdateVentaComponent } from './components/venta/update-venta/update-venta.component';
 import { ListVentaComponent } from './components/venta/list-venta/list-venta.component';
 import { DeleteProductoComponent } from './components/producto/delete-producto/delete-producto.component';
-
+import { TableModule } from 'primeng/table';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -61,8 +64,11 @@ import { DeleteProductoComponent } from './components/producto/delete-producto/d
     AppRoutingModule,
     PanelMenuModule,
     BrowserAnimationsModule,
-    MenubarModule
-  
+    MenubarModule,
+    TableModule,
+    FormsModule,
+    HttpClientModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

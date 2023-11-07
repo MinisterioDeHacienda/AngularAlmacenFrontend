@@ -1,63 +1,17 @@
 <div class="contenedor">
     <app-menuauxiliar rutaDeseada="/tipoproductos"></app-menuauxiliar>
-    <table class="tabla">
-        <tr>
-            <th>ID</th>
-            <th>VENTA_ID</th>
-            <th>PRODUCTO_ID</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>10</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>12</td>
-            <td>102</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>13</td>
-            <td>103</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>14</td>
-            <td>104</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>15</td>
-            <td>105</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>16</td>
-            <td>106</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>17</td>
-            <td>107</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>18</td>
-            <td>108</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>19</td>
-            <td>109</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>20</td>
-            <td>110</td>
-        </tr>
-
-
-
-    </table>
-</div>
+    <p-table [value]="tipoproductos" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-tipoproducto>
+            <tr>
+                <td>{{ tipoproducto.id }}</td>
+                <td>{{ tipoproducto.nombre }}</td>     
+            </tr>
+        </ng-template>
+    </p-table>
+  </div>

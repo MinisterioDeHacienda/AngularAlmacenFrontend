@@ -1,31 +1,31 @@
 <div class="contenedor">
     <app-menuauxiliar rutaDeseada="/clientes" routerLinkActive="activo"></app-menuauxiliar>
-
-    <table class="tabla">
-        <tr>
-            <th>ID</th>
-            <th>NOMBRE</th>
-            <th>APELLIDO</th>
-            <th>CEDULA</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Brayan</td>
-            <td>Arevalo</td>
-            <td>1006616076</td>            
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Alex</td>
-            <td>Medina</td>
-            <td>1003246076</td>            
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Ever</td>
-            <td>Osorio</td>
-            <td>1034616076</td>            
-        </tr>
-    </table>
-
+        <p-table [value]="clientes" [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Acciones</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-clientes>
+                <tr>
+                    <td>{{ clientes.id }}</td>
+                    <td>{{ clientes.nombreCliente }}</td>
+                    <td>{{ clientes.direccionCliente }}</td>
+                    <td>{{ clientes.telefonoCliente }}</td>
+                    <td>{{ clientes.correoCliente }}</td>
+                    <td>
+                        <span class="p-buttonset">
+                            <button pButton pRipple label="Modificar" icon="pi pi-check"></button>
+                            <button pButton pRipple label="Delete" icon="pi pi-trash"></button>
+                
+                        </span>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
 </div>

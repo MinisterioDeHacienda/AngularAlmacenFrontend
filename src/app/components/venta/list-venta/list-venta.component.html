@@ -1,209 +1,29 @@
 <div class="contenedor">
-    <app-menuauxiliar rutaDeseada="/ventas"></app-menuauxiliar>
-
-    <table class="tabla">
-        <tr>
-            <th>ID</th>
-            <th>NOMBRE</th>
-            <th>FECHA</th>
-            <th>SUBTOTAL</th>
-            <th>IVA</th>
-            <th>DESCUENTO</th>
-            <th>TOTAL</th>
-            <th>CLIENTE_ID</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Verduras</td>
-            <td>3-09-2023</td>
-            <td>23.400</td>            
-            <td>4.446</td>
-            <td>0</td>
-            <td>27.846</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Carne</td>
-            <td>5-09-2023</td>
-            <td>18.750</td>
-            <td>3.562</td>
-            <td>0</td>
-            <td>22.312</td>
-            <td>4</td>
-          </tr>
+  <app-menuauxiliar rutaDeseada="/ventas"></app-menuauxiliar>
+  <p-table [value]="ventas" [tableStyle]="{ 'min-width': '50rem' }">
+      <ng-template pTemplate="header">
           <tr>
-            <td>4</td>
-            <td>Pan</td>
-            <td>6-09-2023</td>
-            <td>5.600</td>
-            <td>1.064</td>
-            <td>0</td>
-            <td>6.664</td>
-            <td>1</td>
+              <th>Id</th>
+              <th>Fecha</th>
+              <th>Subtotal</th>
+              <th>CiudadExp</th>
+              <th>Impuestos</th>
+              <th>Descentos</th>
+              <th>Total</th>
+              <th>ClienteId</th>
           </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-ventas>
           <tr>
-            <td>5</td>
-            <td>Leche</td>
-            <td>7-09-2023</td>
-            <td>8.750</td>
-            <td>1.662</td>
-            <td>0</td>
-            <td>10.412</td>
-            <td>2</td>
+              <td>{{ ventas.id }}</td>
+              <td>{{ ventas.fechaVenta }}</td>
+              <td>{{ ventas.subtotal }}</td>
+              <td>{{ ventas.ciudadExp }}</td>
+              <td>{{ ventas.impuestos }}</td>
+              <td>{{ ventas.descuentos }}</td>
+              <td>{{ ventas.total }}</td>
+              <td>{{ ventas.ClienteId }}</td>        
           </tr>
-          <tr>
-            <td>6</td>
-            <td>Huevos</td>
-            <td>8-09-2023</td>
-            <td>3.000</td>
-            <td>570</td>
-            <td>0</td>
-            <td>3.570</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Arroz</td>
-            <td>9-09-2023</td>
-            <td>12.500</td>
-            <td>2.375</td>
-            <td>0</td>
-            <td>14.875</td>
-            <td>1</td>
-          </tr>
-          <!-- 13 filas adicionales -->
-          <tr>
-            <td>8</td>
-            <td>Frijoles</td>
-            <td>10-09-2023</td>
-            <td>5.600</td>
-            <td>1.064</td>
-            <td>0</td>
-            <td>6.664</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>Pasta</td>
-            <td>11-09-2023</td>
-            <td>6.750</td>
-            <td>1.282</td>
-            <td>0</td>
-            <td>8.032</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Aceite de cocina</td>
-            <td>12-09-2023</td>
-            <td>9.200</td>
-            <td>1.748</td>
-            <td>0</td>
-            <td>10.948</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Jabón</td>
-            <td>13-09-2023</td>
-            <td>2.800</td>
-            <td>532</td>
-            <td>0</td>
-            <td>3.332</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Carne de cerdo</td>
-            <td>14-09-2023</td>
-            <td>17.500</td>
-            <td>3.325</td>
-            <td>0</td>
-            <td>20.825</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>Papel higiénico</td>
-            <td>15-09-2023</td>
-            <td>2.500</td>
-            <td>475</td>
-            <td>0</td>
-            <td>2.975</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>Salsa de tomate</td>
-            <td>16-09-2023</td>
-            <td>3.200</td>
-            <td>608</td>
-            <td>0</td>
-            <td>3.808</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>Pollo</td>
-            <td>17-09-2023</td>
-            <td>14.600</td>
-            <td>2.774</td>
-            <td>0</td>
-            <td>17.374</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>Yogur</td>
-            <td>18-09-2023</td>
-            <td>3.800</td>
-            <td>722</td>
-            <td>0</td>
-            <td>4.522</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>17</td>
-            <td>Queso</td>
-            <td>19-09-2023</td>
-            <td>6.900</td>
-            <td>1.311</td>
-            <td>0</td>
-            <td>8.211</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>18</td>
-            <td>Café</td>
-            <td>20-09-2023</td>
-            <td>4.500</td>
-            <td>855</td>
-            <td>0</td>
-            <td>5.355</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>19</td>
-            <td>Pescado</td>
-            <td>21-09-2023</td>
-            <td>11.200</td>
-            <td>2.128</td>
-            <td>0</td>
-            <td>13.328</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>Harina</td>
-            <td>22-09-2023</td>
-            <td>7.600</td>
-            <td>1.448</td>
-            <td>0</td>
-            <td>9.048</td>
-            <td>2</td>
-          </tr>
-
-    </table>
-
+      </ng-template>
+  </p-table>
 </div>
