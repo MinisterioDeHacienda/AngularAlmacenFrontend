@@ -8,9 +8,10 @@
               <th>Subtotal</th>
               <th>CiudadExp</th>
               <th>Impuestos</th>
-              <th>Descentos</th>
+              <th>Descuentos</th>
               <th>Total</th>
               <th>ClienteId</th>
+              <th>Acciones</th>
           </tr>
       </ng-template>
       <ng-template pTemplate="body" let-ventas>
@@ -22,7 +23,13 @@
               <td>{{ ventas.impuestos }}</td>
               <td>{{ ventas.descuentos }}</td>
               <td>{{ ventas.total }}</td>
-              <td>{{ ventas.ClienteId }}</td>        
+              <td>{{ ventas.ClienteId }}</td>
+              <td>
+                <span class="p-buttonset">
+                    <button pButton pRipple label="Modificar" icon="pi pi-check"></button>
+                    <button pButton pRipple label="Delete" icon="pi pi-trash"></button>
+                </span>      
+              </td>
           </tr>
       </ng-template>
   </p-table>

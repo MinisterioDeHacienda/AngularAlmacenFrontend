@@ -16,15 +16,7 @@ export class AsideComponent implements OnInit {
       {
         label: 'Clientes',
         icon: 'pi pi-fw pi-users',
-        //           
-        items: [
-          {
-            label: 'Listar clientes',
-            icon: 'pi pi-fw pi-list',
-            routerLink: '/clientes'
-          }
-
-        ],
+        routerLink: '/clientes'
 
       },
       {
