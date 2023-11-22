@@ -1,1 +1,27 @@
-<p>add-producto-venta works!</p>
+<app-menuauxiliar rutaDeseada="/productoventas"></app-menuauxiliar>
+<div class="contenedor">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="VentumId">ID de Venta</label>
+          <input type="number" id="VentumId" formControlName="VentumId" required>
+        </div>
+      
+        <div>
+          <label for="ProductoId">ID de Producto</label>
+          <input type="number" id="ProductoId" formControlName="ProductoId" required>
+        </div>
+      
+        <div>
+          <label for="cantidad">Cantidad</label>
+          <input type="number" id="cantidad" formControlName="cantidad" required>
+        </div>
+      
+        <div>
+          <label for="valor_unitario">Valor Unitario</label>
+          <input type="number" id="valor_unitario" formControlName="valor_unitario" required>
+        </div>
+      
+        <button type="submit">Guardar</button>
+        <button type="button" (click)="cancel()">Cancelar</button>
+      </form>
+</div>

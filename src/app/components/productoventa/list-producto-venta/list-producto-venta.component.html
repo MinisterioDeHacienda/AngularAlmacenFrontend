@@ -3,17 +3,16 @@
         <p-table [value]="productoventas" [tableStyle]="{ 'min-width': '50rem' }">
             <ng-template pTemplate="header">
                 <tr>
-                    <th>Id</th>
                     <th>VentaId</th>
                     <th>ProductoId</th>
                     <th>Cantidad</th>
                     <th>Valor Unitario</th>
+                    <th>Acciones</th>
                 </tr>
             </ng-template>
             <ng-template pTemplate="body" let-productoventas>
                 <tr>
-                    <td>{{ productoventas.id }}</td>
-                    <td>{{ productoventas.VentaId }}</td>
+                    <td>{{ productoventas.VentumId }}</td>
                     <td>{{ productoventas.ProductoId }}</td>
                     <td>{{ productoventas.cantidad }}</td>
                     <td>{{ productoventas.valor_unitario }}</td>

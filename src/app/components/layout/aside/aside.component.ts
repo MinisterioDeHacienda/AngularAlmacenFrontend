@@ -31,8 +31,13 @@ export class AsideComponent implements OnInit {
       },
       {
         label: 'Ventas',
-        icon: 'pi pi-fw pi-shopping-cart',
+        icon: 'pi pi-money-bill',
         routerLink:'/ventas'
+      },
+      {
+        label: 'ProductoVentas',
+        icon: 'pi pi-fw pi-shopping-cart',
+        routerLink:'/productoventas'
       }
 
     ];

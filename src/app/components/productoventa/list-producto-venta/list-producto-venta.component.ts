@@ -10,7 +10,7 @@ import { ProductoVentaService } from '../../../services/productoventa.service'
 })
 export class ListProductoVentaComponent implements OnInit {
   productoventas: ProductoVentaI[] = [];
-  public displayedColumns: string[] = ["id", "VentaId", "ProductoId", "cantidad", "valor_unitario"]
+  public displayedColumns: string[] = ["VentumId", "ProductoId", "cantidad", "valor_unitario"]
   constructor(private productoVentaService: ProductoVentaService, private router: Router) { }
   ngOnInit(): void {
     this.llernarProductoVenta()
