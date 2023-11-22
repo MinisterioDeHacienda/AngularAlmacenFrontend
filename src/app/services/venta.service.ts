@@ -16,4 +16,7 @@ export class VentaService {
     return this.http
       .get<{venta:VentaI[]}>(this.base_path)
   }
+  createVenta(data: any):Observable<VentaI>{
+    return this.http.post<VentaI>(this.base_path, data)
+  }
 }

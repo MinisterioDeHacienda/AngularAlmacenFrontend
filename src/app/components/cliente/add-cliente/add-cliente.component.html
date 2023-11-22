@@ -2,18 +2,39 @@
 <div class="contenedor">
     
     
-    <form action="/clientes" >
-        <h2>Registrar Cliente</h2>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
-
-        <label for="cedula">Cédula:</label>
-        <input type="text" id="cedula" name="cedula" required>
-
-        <input type="submit" value="Registrar">
-    </form>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="nombreCliente">Nombre Cliente</label>
+          <input type="text" id="nombreCliente" formControlName="nombreCliente" required>
+        </div>
+      
+        <div>
+          <label for="direccionCliente">Dirección</label>
+          <input type="text" id="direccionCliente" formControlName="direccionCliente" required>
+        </div>
+      
+        <div>
+          <label for="telefonoCliente">Teléfono</label>
+          <input type="text" id="telefonoCliente" formControlName="telefonoCliente" required>
+        </div>
+      
+        <div>
+          <label for="correoCliente">Correo</label>
+          <input type="email" id="correoCliente" formControlName="correoCliente" required>
+        </div>
+      
+        <div>
+          <label for="passwordCliente">Contraseña</label>
+          <input type="password" id="passwordCliente" formControlName="passwordCliente" required>
+        </div>
+      
+        <div>
+          <label for="estadoCliente">Estado</label>
+          <input type="text" id="estadoCliente" formControlName="estadoCliente" required>
+        </div>
+      
+        <button type="submit">Enviar</button>
+        <button type="button" (click)="cancel()">Cancelar</button>
+      </form>
 
 </div>

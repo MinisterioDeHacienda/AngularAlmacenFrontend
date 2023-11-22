@@ -16,6 +16,10 @@ import { ListVentaComponent } from './components/venta/list-venta/list-venta.com
 import { AddVentaComponent } from './components/venta/add-venta/add-venta.component';
 import { DeleteVentaComponent } from './components/venta/delete-venta/delete-venta.component';
 import { UpdateVentaComponent } from './components/venta/update-venta/update-venta.component';
+import { ListProductoVentaComponent } from './components/productoventa/list-producto-venta/list-producto-venta.component';
+import { AddProductoVentaComponent } from './components/productoventa/add-producto-venta/add-producto-venta.component';
+import { DeleteProductoVentaComponent } from './components/productoventa/delete-producto-venta/delete-producto-venta.component';
+import { UpdateProductoVentaComponent } from './components/productoventa/update-producto-venta/update-producto-venta.component';
 
 
 const routes: Routes = [
@@ -92,7 +96,23 @@ const routes: Routes = [
     path: "ventas/update",
     component: UpdateVentaComponent
   },
+  {
+    path: "productoventas",
+    component: ListProductoVentaComponent
+  },
+  {
+    path: "productoventas/add",
+    component: AddProductoVentaComponent
+  },
+  {
+    path: "productoventas/delete",
+    component: DeleteProductoVentaComponent
+  },
 
+  {
+    path: "productoventas/update",
+    component: UpdateProductoVentaComponent
+  },
 
 
 

@@ -77,7 +77,7 @@
   
   }
   
-  input[type="numebr"]:focus {
+  input:focus {
   
     border-color: #007bff;
   

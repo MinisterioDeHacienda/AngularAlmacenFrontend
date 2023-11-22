@@ -42,7 +42,7 @@ label {
 }
 
 /* Estilos para los campos de entrada */
-input[type="text"] {
+input[type="text"],[type="email"],[type="password"] {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
@@ -53,7 +53,7 @@ input[type="text"] {
 }
 
 /* Estilos para el botón de enviar */
-input[type="submit"] {
+button[type="submit"],[type="button"] {
   width: 100%;
   padding: 10px;
   background-color: #007bff;
@@ -69,13 +69,13 @@ input[type="submit"] {
 }
 
 /* Estilos para el botón de enviar al pasar el mouse */
-input[type="submit"]:hover {
-  background-color: #0056b3;
-  /* Cambia el color de fondo al pasar el mouse */
-
+button:hover {
+  background-color: #2d2da5;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
-input[type="text"]:focus {
+input:focus {
 
   border-color: #007bff;
 

@@ -15,4 +15,8 @@ export class ProductoService {
     return this.http
       .get<{producto:ProductoI[]}>(this.base_path)
   }
+
+  createProducto(data: any):Observable<ProductoI>{
+    return this.http.post<ProductoI>(this.base_path, data)
+  }
 }

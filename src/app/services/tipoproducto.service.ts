@@ -15,4 +15,8 @@ export class TipoProductoService {
     return this.http
       .get<{tipoproducto:TipoProductoI[]}>(this.base_path)
   }
+
+  createTipoProducto(data: any):Observable<TipoProductoI>{
+    return this.http.post<TipoProductoI>(this.base_path, data)
+  }
 }

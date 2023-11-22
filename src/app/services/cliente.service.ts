@@ -15,4 +15,8 @@ export class ClienteService {
     return this.http
       .get<{cliente:ClienteI[]}>(this.base_path)
   }
+  
+  createCliente(data: any):Observable<ClienteI>{
+    return this.http.post<ClienteI>(this.base_path, data)
+  }
 }

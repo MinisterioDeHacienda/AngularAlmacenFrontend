@@ -1,23 +1,42 @@
 <app-menuauxiliar rutaDeseada="/ventas"></app-menuauxiliar>
 <div class="contenedor">
-    <form action="/ventas">
-        <h2>Registrar Venta</h2>
-        
-        <label for="nombre">NOMBRE:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" required>
-
-        <label for="subtotal">SUBTOTAL:</label>
-        <input type="number" id="precioCompra" name="precioCompra" required step="0.01">
-
-        <label for="iva">IVA:</label>
-        <input type="number" id="iva" name="iva" required step="0.01">
-
-        <label for="descuento">DESCUENTO</label>
-        <input type="number" id="descuento" name="descuento" required step="0.01">
-
-        <input type="submit" value="Registrar">
-    </form>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="fechaVenta">Fecha de Venta</label>
+          <input type="text" id="fechaVenta" formControlName="fechaVenta" required>
+        </div>
+      
+        <div>
+          <label for="subtotal">Subtotal</label>
+          <input type="number" id="subtotal" formControlName="subtotal" required>
+        </div>
+      
+        <div>
+          <label for="ciudadExp">Ciudad de Expedición</label>
+          <input type="text" id="ciudadExp" formControlName="ciudadExp" required>
+        </div>
+      
+        <div>
+          <label for="impuestos">Impuestos</label>
+          <input type="number" id="impuestos" formControlName="impuestos" required>
+        </div>
+      
+        <div>
+          <label for="descuentos">Descuentos</label>
+          <input type="number" id="descuentos" formControlName="descuentos" required>
+        </div>
+      
+        <div>
+          <label for="total">Total</label>
+          <input type="number" id="total" formControlName="total" required>
+        </div>
+      
+        <div>
+          <label for="ClienteId">ID del Cliente</label>
+          <input type="text" id="ClienteId" formControlName="ClienteId" required>
+        </div>
+      
+        <button type="submit">Enviar</button>
+        <button type="button" (click)="cancel()">Cancelar</button>
+      </form>
 </div>

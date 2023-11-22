@@ -1,85 +1,83 @@
 /* Estilos para el contenedor del formulario */
 .contenedor {
-    width: 100%;
-    margin-top: 15px;
-    padding: 20px;
-    background-color: #F8F9FA;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    height: 86%;
-    display: flex;
-  
-  }
-  
-  .contenedor form{
-    width: 400px;
-    padding: 20px;
-    margin: auto;  
-    justify-content: center;  
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;  
-  }
-  
-  .contenedor form h2{
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilos para el título del formulario */
-  h1 {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para las etiquetas de los campos */
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  /* Estilos para los campos de entrada */
-  input[type="number"]{
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    outline: none;
-  
-  }
-  
-  
-  /* Estilos para el botón de enviar */
-  input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    /* Color de fondo del botón */
-    color: #fff;
-    /* Color de texto del botón */
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  
-  }
-  
-  
-  /* Estilos para el botón de enviar al pasar el mouse */
-  input[type="submit"]:hover {
-    background-color: #0056b3;
-    /* Cambia el color de fondo al pasar el mouse */
-  
-  }
-  
-  input[type="numebr"]:focus {
-  
-    border-color: #007bff;
-  
-  }
+  width: 100%;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #F8F9FA;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  height: 86%;
+  display: flex;
+
+}
+
+.contenedor form{
+  width: 400px;
+  padding: 20px;
+  margin: auto;  
+  justify-content: center;  
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;  
+}
+
+.contenedor form h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el título del formulario */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+
+}
+
+/* Estilos para el botón de enviar */
+button[type="submit"],[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color de texto del botón */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+
+}
+
+/* Estilos para el botón de enviar al pasar el mouse */
+button:hover {
+  background-color: #2d2da5;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+
+  border-color: #007bff;
+
+}
   

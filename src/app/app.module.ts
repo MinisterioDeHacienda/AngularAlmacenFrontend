@@ -29,9 +29,13 @@ import { UpdateVentaComponent } from './components/venta/update-venta/update-ven
 import { ListVentaComponent } from './components/venta/list-venta/list-venta.component';
 import { DeleteProductoComponent } from './components/producto/delete-producto/delete-producto.component';
 import { TableModule } from 'primeng/table';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ButtonModule } from 'primeng/button';
+import { AddProductoVentaComponent } from './components/productoventa/add-producto-venta/add-producto-venta.component';
+import { DeleteProductoVentaComponent } from './components/productoventa/delete-producto-venta/delete-producto-venta.component';
+import { ListProductoVentaComponent } from './components/productoventa/list-producto-venta/list-producto-venta.component';
+import { UpdateProductoVentaComponent } from './components/productoventa/update-producto-venta/update-producto-venta.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,10 @@ import { ButtonModule } from 'primeng/button';
     UpdateVentaComponent,
     ListVentaComponent,
     DeleteProductoComponent,
-
+    AddProductoVentaComponent,
+    DeleteProductoVentaComponent,
+    ListProductoVentaComponent,
+    UpdateProductoVentaComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +75,8 @@ import { ButtonModule } from 'primeng/button';
     TableModule,
     FormsModule,
     HttpClientModule,
-    ButtonModule
+    ButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
