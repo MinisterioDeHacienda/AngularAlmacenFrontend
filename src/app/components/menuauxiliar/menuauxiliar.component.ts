@@ -14,20 +14,9 @@ export class MenuauxiliarComponent {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'Añadir',
+        label: 'Añadir' ,
         icon: 'pi pi-fw pi-plus',        
         routerLink: this.rutaDeseada+'/add',  
-        
-      },
-      {
-        label: 'Modificar',
-        icon: 'pi pi-fw pi-sync',
-        routerLink: this.rutaDeseada+'/update'        
-      },
-      {
-        label: 'Eliminar',
-        icon: 'pi pi-fw pi-delete-left',
-        routerLink: this.rutaDeseada+'/delete'        
       }
 
     ]

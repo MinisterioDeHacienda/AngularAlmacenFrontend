@@ -1,82 +1,89 @@
-/* Estilos para el contenedor del formulario */
-.contenedor {
-  width: 100%;
-  margin-top: 15px;
-  padding: 20px;
-  background-color: #F8F9FA;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
-  height: 86%;
+.contenedor{
+  min-height: 100vh;
   display: flex;
-
-}
-
-.contenedor form{
-  width: 400px;
-  padding: 20px;
-  margin: auto;  
-  justify-content: center;  
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;  
+  justify-content: center;
+  background: #ffffff;
 }
-
-.contenedor form h2{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Estilos para el título del formulario */
-h1 {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Estilos para las etiquetas de los campos */
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-/* Estilos para los campos de entrada */
-input[type="text"],[type="number"] {
+.wrapper{
+  position: relative;
+  max-width: 430px;
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #747d97;
+}
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 52px;
+  margin: 22px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
   outline: none;
-
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000000;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
-
-/* Estilos para el botón de enviar */
-button[type="submit"],[type="button"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  /* Color de fondo del botón */
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #4070f4;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+form .input-box.button input{
   color: #fff;
-  /* Color de texto del botón */
+  letter-spacing: 1px;
   border: none;
-  border-radius: 3px;
+  background: #4070f4;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-
+  margin-bottom: 2px;
 }
-
-/* Estilos para el botón de enviar al pasar el mouse */
-button:hover {
-  background-color: #2d2da5;
-  color: white;
-  transition: background-color 0.3s ease;
+form .input-box.button input:hover{
+  background: #0e4bf1;
 }
-
-input:focus {
-
-  border-color: #007bff;
-
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
 }

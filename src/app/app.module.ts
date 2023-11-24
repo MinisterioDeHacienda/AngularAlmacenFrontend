@@ -36,7 +36,6 @@ import { AddProductoVentaComponent } from './components/productoventa/add-produc
 import { DeleteProductoVentaComponent } from './components/productoventa/delete-producto-venta/delete-producto-venta.component';
 import { ListProductoVentaComponent } from './components/productoventa/list-producto-venta/list-producto-venta.component';
 import { UpdateProductoVentaComponent } from './components/productoventa/update-producto-venta/update-producto-venta.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,6 +77,7 @@ import { UpdateProductoVentaComponent } from './components/productoventa/update-
     ButtonModule,
     ReactiveFormsModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

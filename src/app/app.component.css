@@ -7,7 +7,8 @@ main {
         "header header header"
         "aside section section"
         "footer footer footer";
-    height: 100vh;/* Ocupa el 100% de la altura de la ventana */
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
 }
 
 header {

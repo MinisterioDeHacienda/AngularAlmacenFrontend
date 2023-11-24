@@ -1,39 +1,25 @@
-/* .contenedor {
-  min-height: 100vh;
-} */
+.p-datatable-thead {
+  display: block;
 
-.tabla {
-  margin-top: 15px;
-  width: 100%;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
+  tr {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 
+.p-datatable-tbody {
+  display: block;
 
+  tr {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 
-/* Estilo para las celdas de encabezado de la tabla */
-th {
-  background-color: #f2f2f2;
-  /* Color de fondo del encabezado */
-  text-align: left;
-  /* Alineación del texto a la izquierda en las celdas del encabezado */
-  padding: 10px;
-  /* Espaciado interno en las celdas del encabezado */
-  border: 1px solid #ddd;
-  /* Borde de 1 píxel sólido con color gris claro */
-}
-
-/* Estilo para las celdas de datos de la tabla */
-td {
-  padding: 10px;
-  /* Espaciado interno en las celdas de datos */
-  border: 1px solid #ddd;
-  /* Borde de 1 píxel sólido con color gris claro */
-}
-
-/* Estilos para el efecto hover */
-.tabla tr:hover {
-  background-color: #f5f5f5;
-  cursor: pointer;
-  /* Cambia el color de fondo al pasar el cursor */
+  td {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+  }
 }

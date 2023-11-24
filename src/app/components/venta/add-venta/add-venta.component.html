@@ -1,42 +1,33 @@
-<app-menuauxiliar rutaDeseada="/ventas"></app-menuauxiliar>
+
 <div class="contenedor">
+  <div class="wrapper">
+    <h2>Registro Venta</h2>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-        <div>
-          <label for="fechaVenta">Fecha de Venta</label>
-          <input type="text" id="fechaVenta" formControlName="fechaVenta" required>
-        </div>
-      
-        <div>
-          <label for="subtotal">Subtotal</label>
-          <input type="number" id="subtotal" formControlName="subtotal" required>
-        </div>
-      
-        <div>
-          <label for="ciudadExp">Ciudad de Expedición</label>
-          <input type="text" id="ciudadExp" formControlName="ciudadExp" required>
-        </div>
-      
-        <div>
-          <label for="impuestos">Impuestos</label>
-          <input type="number" id="impuestos" formControlName="impuestos" required>
-        </div>
-      
-        <div>
-          <label for="descuentos">Descuentos</label>
-          <input type="number" id="descuentos" formControlName="descuentos" required>
-        </div>
-      
-        <div>
-          <label for="total">Total</label>
-          <input type="number" id="total" formControlName="total" required>
-        </div>
-      
-        <div>
-          <label for="ClienteId">ID del Cliente</label>
-          <input type="text" id="ClienteId" formControlName="ClienteId" required>
-        </div>
-      
-        <button type="submit">Enviar</button>
-        <button type="button" (click)="cancel()">Cancelar</button>
-      </form>
+      <div class="input-box">
+        <input  placeholder="Fecha de Venta" type="date" id="fechaVenta" formControlName="fechaVenta" required>
+      </div>
+      <div class="input-box">
+        <input placeholder="Subtotal" type="number" id="subtotal" formControlName="subtotal" required>
+      </div>
+      <div class="input-box">
+        <input placeholder="Ciudad de Expedición" type="text" id="ciudadExp" formControlName="ciudadExp" required>
+      </div>
+      <div class="input-box">
+        <input placeholder="Impuestos" type="number" id="impuestos" formControlName="impuestos" required>
+      </div>
+      <div class="input-box">
+        <input placeholder="Descuentos" type="number" id="descuentos" formControlName="descuentos" required>
+      </div>
+      <div class="input-box">
+        <input placeholder="Total" type="number" id="total" formControlName="total" required>
+      </div>
+      <div class="input-box">
+        <input placeholder="ClienteId" type="number" id="ClienteId" formControlName="ClienteId" required>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Enviar">
+        <input type="button" value="Cancelar" (click)="cancel()">
+      </div>
+    </form>
+  </div>
 </div>
